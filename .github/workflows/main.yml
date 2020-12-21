@@ -8,4 +8,4 @@ jobs:
       - uses: actions/checkout@v1
       - run: |
               echo "hello world"
-              curl -X POST -u sagniksom:{{secrets.PAT_TOKEN}} -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/sagniksom/hello-github-actions/actions/workflows/main.yml/dispatches -d '{"ref":"master"}'
+              curl -X POST -u sagniksom:{{secrets.GITHUB_TOKEN}} -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/sagniksom/hello-github-actions/actions/workflows/main.yml/dispatches -d '{"ref":"master"}'
