@@ -10,5 +10,5 @@ jobs:
               echo "hello world"
               git config --global user.name "Sagnik Som"
               git config --global user.email sagniksom99@gmail.com
-              curl -H "Authorization: token 46882bf8c03e5d747c39a5bb4cd628e34d3ece75" -H 'Accept: application/vnd.github.everest-preview+json' https://api.github.com/repos/rubikloud/auto-release-test/dispatches -d '{"event_type": "Create Release", "client_payload": {"foo": "bar", "tag": "v2.5", "name": "my release"}}'
+              curl -H "Authorization: token 523b45876c28d23bf6025e1b393c5d67fccb476c" -H 'Accept: application/vnd.github.everest-preview+json' https://api.github.com/repos/rubikloud/auto-release-test/dispatches -d '{"event_type": "Create Release", "client_payload": {"foo": "bar", "tag": "v2.5", "name": "my release"}}'
               
